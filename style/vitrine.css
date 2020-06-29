@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+body{ 
+	background-color: #f2f2f2; 
+	box-sizing: content-box;
+	text-align: center;
+	vertical-align:middle;
+}
+
+@font-face {
+	font-family: "nasalization-rg";
+	src: url("nasalization-rg.ttf") format("truetype");
+}
+
+header {
+	background-image: url("texture-header.jpg");
+	height: 150px;
+	text-align: center;
+}
+
+h1 {
+	font-family: "nasalization-rg";
+	font-size: 40px;
+	color: #27d1ff;
+	text-align: center;
+}
+
+nav{
+	color: white;
+	display: inline-block 100%;
+	background-color: #2e2f30;
+	padding-right:50px;
+	margin:0px;
+	text-align: right;
+	vertical-align: middle;
+
+}
+
+nav a{
+
+	color: white;
+	text-align: right;
+	text-decoration: none;
+
+}
+
+nav a:hover {
+	color: #17c1ff;
+	font-weight: bold;
+}
+
+.pageActive {
+	color: #17c1ff;
+	font-weight: bold;
+}
+h2 {
+	text-transform: uppercase;
+	text-shadow: 2px 2px 5px black;
+	background-color: #e6e6e6;
+	text-align: center;
+}
+
+footer{
+	margin-bottom:  10px;
+}
+
+.weekend{
+	visibility: collapse;
+}
+
+.formulaire{
+
+  width: 300px;
+  padding: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: black;
+  border: 2px solid #e6e6e6;
+
+}
+
+.formulaire input, textarea{
+  font-family: 'Open Sans'
+  width: 250px;
+  font-size: 14px;
+  background: none;
+  color: white;
+  border: 0.5px solid grey;
+  margin-top: 15px;
+}
+
+.formulaire input{
+	height: 30px;
+}
+
+.formulaire button{
+
+	color: black;
+
+}
+
+.formulaire button:hover{
+	color : white;
+	background-color: #17c1ff;
+}
+
+.formulaire input:hover, textarea:hover{
+	border-color: blue;
+}
+
+.scrollTable{
+	margin: auto;
+    text-align: left;
+    height: 480px;
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 30px;
+    overflow: scroll;
+}
+
+#tableau {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tableau th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: blue;
+  color: white;
+}
+
+#tableau td, #tableau th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tableau tr:nth-child(even){background-color: #f2f2f2;}
+
+#tableau tr:hover {background-color: #ddd;}
